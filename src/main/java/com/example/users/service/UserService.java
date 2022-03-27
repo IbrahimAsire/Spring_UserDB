@@ -29,7 +29,7 @@ public class UserService {
     }
 
     public void updateUser(Integer id,MyUser myUser) {
-       MyUser updateUser=userRepository.getById(id);
+       MyUser updateUser = userRepository.getById(id);
        updateUser.setUsername(myUser.getUsername());
        updateUser.setEmail(myUser.getEmail());
        updateUser.setPassword(myUser.getPassword());
